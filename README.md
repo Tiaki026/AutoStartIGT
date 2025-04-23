@@ -32,4 +32,42 @@ docker-compose ps  # Статус контейнеров
 
 Для изменения настроек Telegraf меняем настройки на нужные в [telegraf.conf](https://github.com/Tiaki026/AutoStartIGT/blob/main/telegraf.conf)
 
+<details>
+<summary>:hammer: Настройка Grafana</summary>
+  
+Логин: admin
+Пароль: admin
+Меняем пароль или оставляем как есть
 
+Добавляем InfluxDB как Data Source
+
+"Data Sources" → "Add data source"
+
+Выбираем InfluxDB
+Заполняем
+Поле	                    Значение
+Query Language	          InfluxQL
+URL	                      http://influxdb:8086
+Database	                telegraf
+User / Password	          пусто (если auth выключен)
+HTTP Method	              GET или POST
+
+✅ "Save & Test"
+
+Можно импортировать дашборд
+
+"📊 Dashboards" → "Import"
+ID из Grafana Dashboards например 928
+Load
+В поле InfluxDB выбираем свой источник данных
+Import
+🎉 Готово! У тебя будет шикарный дашборд с CPU, RAM, дисками, сетью и т.п.
+
+</details>
+
+### Автор:
+  - [Колотиков Евгений](https://github.com/Tiaki026)
+#
+
+
+  ## [:top: Путь наверх :top:](https://github.com/Tiaki026/AutoStartIGT)
