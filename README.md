@@ -1,2 +1,2 @@
 # AutoStartIGT
-Автоматический запуск Influxdb, Grafana, Telegraf
+Автоматический запуск Influxdb, Grafana, Telegraf 
