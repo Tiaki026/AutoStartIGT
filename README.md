@@ -5,11 +5,14 @@
 ## Описание
 Для работы с docker-compose.yml должен быть установлен Docker
 
+##
+Понравилась работа? Оцени нажав на :star:
+##
 
 ## Запуск
 Для Windows открываем start.bat, выбираем нужные действия и наслаждаемся
 <details>
-<summary>:mag: Спойлер</summary>
+<summary>:mag: Тут картинки :)</summary>
 
 ![image](https://github.com/user-attachments/assets/4db477d1-7f66-4e48-b839-8bd69d334e08)
 
@@ -32,11 +35,12 @@ docker-compose ps  # Статус контейнеров
 
 Для изменения настроек Telegraf меняем настройки на нужные в [telegraf.conf](https://github.com/Tiaki026/AutoStartIGT/blob/main/telegraf.conf)
 
-<details>
-<summary>:hammer: Настройка Grafana</summary>
-  
+## Настройка Grafana
+   
 Логин: admin
+
 Пароль: admin
+
 Меняем пароль или оставляем как есть
 
 Добавляем InfluxDB как Data Source
@@ -44,30 +48,37 @@ docker-compose ps  # Статус контейнеров
 "Data Sources" → "Add data source"
 
 Выбираем InfluxDB
+
 Заполняем
-Поле	                    Значение
-Query Language	          InfluxQL
-URL	                      http://influxdb:8086
-Database	                telegraf
-User / Password	          пусто (если auth выключен)
-HTTP Method	              GET или POST
+
+| Поле               | Значение                          |
+|--------------------|-----------------------------------|
+| Query Language     | InfluxQL                          |
+| URL                | `http://influxdb:8086`            |
+| Database           | `telegraf`                        |
+| User / Password    | пусто (если auth выключен)        |
+| HTTP Method        | GET или POST                      |
 
 ✅ "Save & Test"
 
-Можно импортировать дашборд
+## Импорт дашборда
 
 "📊 Dashboards" → "Import"
+
 ID из Grafana Dashboards например 928
+
 Load
+
 В поле InfluxDB выбираем свой источник данных
+
 Import
+
 🎉 Готово! У тебя будет шикарный дашборд с CPU, RAM, дисками, сетью и т.п.
 
-</details>
 
-### Автор:
+## Автор:
   - [Колотиков Евгений](https://github.com/Tiaki026)
-#
+##
 
 
   ## [:top: Путь наверх :top:](https://github.com/Tiaki026/AutoStartIGT)
