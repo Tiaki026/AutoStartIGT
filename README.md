@@ -3,8 +3,7 @@
 
 
 ## Описание
-Для работы с docker-compose.yml должен быть установлен Docker
-
+Для работы с docker-compose.yml должен быть установлен [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 ##
 Понравилась работа? Оцени нажав на :star:
 ##
